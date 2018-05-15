@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box !important;
+}
+
+@import 'mixins';
+@import 'variables';
+@import 'texts';
+@import 'home';
+@import 'team';
+@import 'footer';
+@import 'navbar';
+
+section:not(.home) {
+  padding: 4rem 0;
+}

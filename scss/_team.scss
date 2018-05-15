@@ -1,0 +1,37 @@
+.team-row {
+  margin-top: 4rem;
+}
+
+.team-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .team-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 7px solid $green;
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom: 1rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .team-body {
+    text-align: center;
+    text-transform: uppercase;
+
+    h5 {
+      font-size: 1.75rem;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
+}

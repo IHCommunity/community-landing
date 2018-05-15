@@ -1,3 +1,118 @@
+* {
+  box-sizing: border-box !important; }
 
+@font-face {
+  font-family: CircularStd;
+  font-weight: normal;
+  font-style: normal;
+  src: url("./assets/fonts/CircularStd-Book.woff") format("woff"); }
+@font-face {
+  font-family: CircularStd;
+  font-weight: 700;
+  font-style: normal;
+  src: url("./assets/fonts/CircularStd-Bold.woff") format("woff"); }
+@font-face {
+  font-family: CircularStd;
+  font-weight: 900;
+  font-style: normal;
+  src: url("./assets/fonts/CircularStd-Black.woff") format("woff"); }
+h1, h2, h3, h4, h5, h6, p {
+  color: #333333;
+  font-family: "CircularStd", Helvetica, sans-serif; }
+
+h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center; }
+
+.home-heading {
+  font-size: 4.375rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 4.375rem;
+  margin-bottom: 2.5rem; }
+  .home-heading span {
+    color: #00DF96;
+    font-weight: 900; }
+
+.rectangle {
+  display: block;
+  width: 60px;
+  height: 7px;
+  margin: 0 auto;
+  background-color: #00DF96; }
+
+.lead {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: #666666; }
+
+.home {
+  min-height: calc( 100vh - 80px ); }
+
+.right-svg {
+  max-width: 50%;
+  max-height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 40%; }
+  .right-svg img {
+    width: 100%;
+    max-height: 90vh;
+    float: right; }
+
+.team-row {
+  margin-top: 4rem; }
+
+.team-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .team-card .team-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 7px solid #00DF96;
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom: 1rem; }
+    .team-card .team-img img {
+      width: 100%; }
+  .team-card .team-body {
+    text-align: center;
+    text-transform: uppercase; }
+    .team-card .team-body h5 {
+      font-size: 1.75rem;
+      margin-bottom: 0; }
+    .team-card .team-body p {
+      font-size: 1.25rem; }
+
+footer {
+  background-color: #282828;
+  padding: 1.5rem 0; }
+  footer p {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-weight: 700; }
+
+nav {
+  height: 80px; }
+  nav .logo {
+    height: 80px;
+    position: relative; }
+    nav .logo .left-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 120px; }
+    nav .logo .logo-img {
+      height: 80px;
+      z-index: 1; }
+
+section:not(.home) {
+  padding: 4rem 0; }
 
 /*# sourceMappingURL=style.css.map */

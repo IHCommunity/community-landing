@@ -1,0 +1,42 @@
+@include font-face(CircularStd, "CircularStd-Book");
+@include font-face(CircularStd, "CircularStd-Bold", 700);
+@include font-face(CircularStd, "CircularStd-Black", 900);
+
+h1, h2, h3, h4, h5, h6, p {
+  color: $grey;
+  font-family: "CircularStd", Helvetica, sans-serif;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.home-heading {
+  font-size: 4.375rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 4.375rem;
+  margin-bottom: 2.5rem;
+
+  span {
+    color: $green;
+    font-weight: 900;
+  }
+}
+
+.rectangle {
+  display: block;
+  width: 60px;
+  height: 7px;
+  margin: 0 auto;
+  background-color: $green;
+}
+
+.lead {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: $lightgrey;
+}
