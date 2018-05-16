@@ -5,9 +5,12 @@
 @import 'mixins';
 @import 'variables';
 @import 'texts';
+@import 'buttons';
 @import 'home';
 @import 'team';
 @import 'footer';
+@import 'icon-card';
+@import 'features';
 @import 'navbar';
 
 section:not(.home) {

@@ -5,17 +5,17 @@
   font-family: CircularStd;
   font-weight: normal;
   font-style: normal;
-  src: url("./assets/fonts/CircularStd-Book.woff") format("woff"); }
+  src: url("../fonts/CircularStd-Book.woff") format("woff"); }
 @font-face {
   font-family: CircularStd;
   font-weight: 700;
   font-style: normal;
-  src: url("./assets/fonts/CircularStd-Bold.woff") format("woff"); }
+  src: url("../fonts/CircularStd-Bold.woff") format("woff"); }
 @font-face {
   font-family: CircularStd;
   font-weight: 900;
   font-style: normal;
-  src: url("./assets/fonts/CircularStd-Black.woff") format("woff"); }
+  src: url("../fonts/CircularStd-Black.woff") format("woff"); }
 h1, h2, h3, h4, h5, h6, p {
   color: #333333;
   font-family: "CircularStd", Helvetica, sans-serif; }
@@ -24,6 +24,11 @@ h2 {
   text-transform: uppercase;
   font-size: 2rem;
   text-align: center; }
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  color: #00DF96; }
 
 .home-heading {
   font-size: 4.375rem;
@@ -48,8 +53,27 @@ h2 {
   margin-top: 2rem;
   color: #666666; }
 
+@media screen and (max-width: 576px) {
+  .home-heading {
+    font-size: 3rem;
+    line-height: 3rem; } }
+.btn {
+  text-decoration: none !important;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 4rem;
+  transition: all 0.5s ease;
+  text-transform: uppercase; }
+
+.btn-primary {
+  background-color: #00DF96 !important;
+  color: #fff !important; }
+  .btn-primary:hover {
+    background-color: #28f9b3 !important; }
+
 .home {
-  min-height: calc( 100vh - 80px ); }
+  min-height: 100vh; }
 
 .right-svg {
   max-width: 50%;
@@ -63,13 +87,30 @@ h2 {
     max-height: 90vh;
     float: right; }
 
+.background {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .background .background-wraper {
+    position: relative;
+    height: 100%;
+    width: 100%; }
+    .background .background-wraper circle {
+      width: 80%;
+      height: 20%;
+      position: absolute;
+      bottom: 0; }
+
 .team-row {
   margin-top: 4rem; }
 
 .team-card {
   display: flex;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 2rem; }
   .team-card .team-img {
     width: 200px;
     height: 200px;
@@ -87,7 +128,8 @@ h2 {
       font-size: 1.75rem;
       margin-bottom: 0; }
     .team-card .team-body p {
-      font-size: 1.25rem; }
+      font-size: 1.25rem;
+      color: #666666; }
 
 footer {
   background-color: #282828;
@@ -98,7 +140,46 @@ footer {
     margin: 0;
     font-weight: 700; }
 
+.icon-row {
+  margin-top: 4rem; }
+
+.icon-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem; }
+  .icon-card .icon-img {
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom: 1rem; }
+    .icon-card .icon-img img {
+      width: 100%;
+      max-width: 250px; }
+  .icon-card .icon-body {
+    text-align: center; }
+    .icon-card .icon-body h5 {
+      font-size: 1.5rem;
+      margin-bottom: 0;
+      text-transform: uppercase; }
+    .icon-card .icon-body p {
+      font-size: 1.25rem;
+      color: #666666; }
+
+.feature {
+  padding: 4rem 0; }
+  .feature .feature-gif {
+    max-height: 500px; }
+    .feature .feature-gif img {
+      max-height: 500px;
+      box-shadow: 0 0 22px 0 rgba(0, 0, 0, 0.15); }
+
+@media screen and (max-width: 768px) {
+  .feature-gif {
+    margin-bottom: 3rem; } }
 nav {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 80px; }
   nav .logo {
     height: 80px;
