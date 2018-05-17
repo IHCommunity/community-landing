@@ -16,3 +16,36 @@
 section:not(.home) {
   padding: 4rem 0;
 }
+
+.social-icon {
+ color: $lightgrey;
+ text-decoration: none !important;
+
+  .socicon {
+    transition: all 0.5s ease;
+  }
+
+  .socicon-linkedin:hover {
+    color: #3371b7;
+  }
+
+  .socicon-medium:hover {
+    color: #03a87c;
+  }
+
+  .socicon-github:hover {
+    color: #221e1b;
+  }
+
+  .socicon-chrome:hover {
+    color: #4285f4;
+  }
+
+  .socicon-twitter:hover {
+    color: #4da7de;
+  }
+}
+
+hr {
+  opacity: 0.4;
+}
